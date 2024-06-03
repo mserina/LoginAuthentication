@@ -1,0 +1,31 @@
+
+body {
+	background: teal;
+	font-family: sans-serif; 
+	font-size: 10pt; 
+	text-align: center;
+}
+
+form {
+	display: inline-block;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+h1 {
+	color: orange;
+	font-family: Helvetica Neue;
+	font-weight: 100;
+	font-size: 48px;
+}
+
+.inputgris {
+	border: none; 
+	background-color: white;
+	color: darkred;
+	border: thin solid gray;
+	border-radius: 6px;
+}
