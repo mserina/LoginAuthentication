@@ -16,7 +16,7 @@ import jakarta.servlet.http.HttpSession;
  */
 public class LoginAuthenticator extends HttpServlet {
 	
-	//es como una etiqueta de versión para asegurarse de que los objetos serializados y deserializados son compatibles.
+	//SerialVersionUID: es como una etiqueta de versión para asegurarse de que los objetos serializados y deserializados son compatibles.
 	//SERELIZADO: OBJETO --> BYTES
 	//DESREALIZADO: BYTES --> OBJETO
 	private static final long serialVersionUID = 1L;
