@@ -44,10 +44,13 @@ public class LoginAuthenticator extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	
-	
+	/**
+	 * Este método maneja las solicitudes POST enviadas al servlet. 
+	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		beanDB db = new beanDB();
+		//Aqui se obtien la sesion http actual
 		HttpSession session = request.getSession();
 		String usuario=request.getParameter("usuario");
 		String pass=request.getParameter("pass");
@@ -56,8 +59,8 @@ public class LoginAuthenticator extends HttpServlet {
 		boolean ok=false;
 		
 		if(usuario.equals(usuvalido) && pass.equals(pwdvalida)) {
-			session.setAttribute("attributo2",usuario);
-			session.setAttribute("attributo1","1");
+			session.setAttribute("user",usuario);
+			session.setAttribute("nivel","1");
 			ok=true;
 		}
 				

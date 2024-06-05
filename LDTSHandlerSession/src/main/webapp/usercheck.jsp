@@ -16,7 +16,7 @@
 		
 		//SE ACCEDE A LA SESION, AL ATRIBUTO1 (EN FORMATO STRING) QUE CONTIENE LA AUTENTICACION DEL USUARIO
 		//SI NO ES NULL, SI EL ATRIBUTO NO ES NULL SE VERIFICA LA ENTRADA A LA SESION
-		if ((String) session.getAttribute("attributo1") != null) {
+		if ((String) session.getAttribute("nivel") != null) {
 			
 			out.print("Ha entrado en la sesion");
 

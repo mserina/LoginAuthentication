@@ -6,7 +6,7 @@
 
 <%
 try {  //AQUI VA EL CONTROL DE SESION
-	String acceso = session.getAttribute("attributo1").toString();
+	String acceso = session.getAttribute("nivel").toString();
  	if (!acceso.equals("1")) response.sendRedirect("cerrarsesion.jsp");
 } catch (Exception e) {
 	response.sendRedirect("cerrarsesion.jsp");
